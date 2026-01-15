@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import AnimatedBackground from '../components/AnimatedBackground';
 import '../styles/LoginPage.css';
 
 const LoginPage = () => {
@@ -54,8 +55,10 @@ const LoginPage = () => {
   };
 
   return (
-    <div className="login-container">
-      <div className="login-box">
+    <div className="login-page">
+      <AnimatedBackground />
+      <div className="login-container">
+        <div className="login-box">
         <div className="login-header">
           <h1>🛡️ SOC Dashboard</h1>
           <p>Security Operations Center</p>
@@ -97,6 +100,7 @@ const LoginPage = () => {
           <p>Demo Credentials:</p>
           <p className="demo-creds">Email: admin@soc.com</p>
           <p className="demo-creds">Password: password123</p>
+        </div>
         </div>
       </div>
     </div>
